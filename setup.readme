@@ -1,11 +1,14 @@
+You will need mongodb installed.
+TODO: Add how to connect to mongodb. Can't remember how I did it.
+
 To set up this project:
 1. Start the Mongo DB by navigating here: C:\mongo\bin and starting mongod.exe
 2. Go to server.js, right click and hit "Run"
-3. Go to index.html, right clikc and hit "Run"
+3. Go to index.html, right click and hit "Run"
 
 That's it - it should load in the browser.
 
 To set up debug mode:
 Same as above but run server.js and index.html as debug
 
-To see what's in teh database: http://localhost:3000/
+To see what's in the mongodb database: http://localhost:3000/
