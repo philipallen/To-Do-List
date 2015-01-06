@@ -8,7 +8,7 @@ app.use(bodyParser());
 
 var mongoose = require("mongoose");
 
-mongoose.connect('mongodb://localhost/jetbrains');
+mongoose.connect('mongodb://localhost/toDo');
 
 var Item = mongoose.model('Item', {name: String});
 
