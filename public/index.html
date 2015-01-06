@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="jetbrains" ng-controller="AppCtrl as app">
+
+<ul>
+    <div ng-repeat="item in app.items">
+        <input type="checkbox"
+               value="{{item._id}}"
+               name="selectedItems[]"
+               ng-checked="selection.indexOf(item) > -1"
+               ng-click="app.toggleSelection(item)" > {{item.name}}
+    </div>
+
+</ul>
+
+<input type="text" ng-model="app.newItem"/>
+<button ng-click="app.saveItem(app.newItem)">Add</button>
+<button ng-click="app.deleteItem(app.selection)">Delete</button>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
