@@ -36,4 +36,9 @@ jetbrains.controller("AppCtrl", function ($http) {
         }
     };
 
+    app.addNewItem = function(keyEvent) {
+        if (keyEvent.which === 13)
+            app.saveItem(app.newItem);
+    }
+
 });

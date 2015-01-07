@@ -6,6 +6,7 @@
 </head>
 <body ng-app="jetbrains" ng-controller="AppCtrl as app">
 
+<span>To Do:</span>
 <ul>
     <div ng-repeat="item in app.items">
         <input type="checkbox"
@@ -17,9 +18,9 @@
 
 </ul>
 
-<input type="text" ng-model="app.newItem"/>
+<input ng-keypress="app.addNewItem($event)" type="text" ng-model="app.newItem" style="width: 120px"/>
 <button ng-click="app.saveItem(app.newItem)">Add</button>
-<button ng-click="app.deleteItem(app.selection)">Delete</button>
+<button ng-click="app.deleteItem(app.selection)">Delete Selected</button>
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="app.js"></script>
