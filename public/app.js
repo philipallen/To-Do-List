@@ -1,6 +1,6 @@
-var jetbrains = angular.module("jetbrains", []);
+var toDo = angular.module("toDo", []);
 
-jetbrains.controller("AppCtrl", function ($http) {
+toDo.controller("AppCtrl", function ($http) {
     var app = this;
     var url = "http://localhost:3000";
 
