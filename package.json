@@ -1,0 +1,26 @@
+{
+  "name": "To-Do-List",
+  "version": "1.0.0",
+  "description": "You will need mongodb installed\r TODO: Add how to connect to mongodb.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.10.6",
+    "cors": "^2.5.2",
+    "body-parser": "^1.10.0",
+    "mongoose": "^3.8.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philipallen/To-Do-List.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philipallen/To-Do-List/issues"
+  },
+  "homepage": "https://github.com/philipallen/To-Do-List"
+}
